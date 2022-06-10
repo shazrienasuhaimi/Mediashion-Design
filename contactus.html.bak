@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/logo.jpeg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="mask-icon" type="image/x-icon" href="/Images/logo.jpeg" color="#111">
+    <title>Mediashion Design - Contact Us</title>
+    <script defer="defer" src="Data/all.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer="defer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+	body{
+		background: #F2F2F2;
+	}
+      h1 {
+        margin: 10px 0 0 0;
+      }
+
+      h4 {
+        margin: 0 0 20px 0;
+      }
+
+      #contact-form {
+        background-color: rgba(72, 72, 72, 0.9);
+        padding: 10px 20px 30px 20px;
+        max-width: 100%;
+        float: left;
+        left: 50%;
+        position: absolute;
+        margin-top: 30px;
+        margin-left: -260px;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+      }
+
+      #contact-form input,
+      #contact-form select,
+      #contact-form textarea,
+      #contact-form label {
+        font-size: 15px;
+        margin-bottom: 2px;
+        font-family: Arial, san-serif;
+      }
+
+      #contact-form input,
+      #contact-form select,
+      #contact-form textarea {
+        width: 100%;
+        background: #fff;
+        border: 0;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        margin-bottom: 25px;
+        padding: 5px;
+      }
+
+      #contact-form input:focus,
+      #contact-form select:focus,
+      #contact-form textarea:focus {
+        background-color: #E5E6E7;
+      }
+
+      #contact-form textarea {
+        width: 100%;
+        height: 150px;
+      }
+
+      #contact-form button[type="submit"] {
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        background: #991D57;
+        background-image: linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+        background-image: -moz-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+        background-image: -webkit-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+        color: #FFF;
+        margin: 0 0 5px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      #contact-form button[type="submit"]:hover {
+        background-image: linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+        background-image: -moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+        background-image: -webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      #contact-form button[type="submit"]:active {
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      input:required,
+      textarea:required {
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        -o-box-shadow: none;
+      }
+
+      #contact-form .required {
+        font-weight: bold;
+        color: #E5E6E7;
+      }
+
+      /* Hide success/failure message
+   (especially since the php is missing) */
+      #failure,
+      #success {
+        color: #6EA070;
+        display: none;
+      }
+
+      /* Make form look nice on smaller screens */
+      @media only screen and (max-width: 580px) {
+        #contact-form {
+          left: 3%;
+          margin-right: 3%;
+          width: 88%;
+          margin-left: 0;
+          padding-left: 3%;
+          padding-right: 3%;
+        }
+      }
+    </style>
+    <script>
+      window.console = window.console || function(t) {};
+    </script>
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+  </head>
+  <body translate="no">
+    <meta charset="UTF-8">
+    <link href="Data/css.css" rel="stylesheet">
+    <nav id="navbar" class="">
+      <div class="nav-wrapper">
+        <!-- Navbar Logo -->
+        <div class="logo">
+          <!-- Logo Placeholder for Inlustration -->
+          <a href="#">
+            <i>
+              <img src="/Images/logo.jpeg" style="height:50%;">
+            </i>
+          </a>
+        </div>
+        <ul id="menu">
+          <li>
+            <a href="index.html#home">Home</a>
+          </li>
+          <li>
+            <a href="index.html#product">Our Products</a>
+          </li>
+          <li>
+            <a href="aboutus.html">About Us</a>
+          </li>
+          <li>
+            <a href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Menu Icon -->
+    <div class="menuIcon">
+      <span class="icon icon-bars"></span>
+      <span class="icon icon-bars overlay"></span>
+    </div>
+    <div class="overlay-menu">
+      <ul id="menu">
+        <li>
+          <a href="index.html#home">Home</a>
+        </li>
+        <li>
+          <a href="index.html#product">Our Products</a>
+        </li>
+        <li>
+          <a href="aboutus.html">About Us</a>
+        </li>
+        <li>
+          <a href="contactus.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="wrapper">
+      <section id="contact">
+	  <div id="contact-form">
+          <div>
+            <h1>Nice to Meet You!</h1>
+            <h4>Have a question or just want to get in touch? Let's chat.</h4>
+          </div>
+          <p id="failure">Oopsie...message not sent.</p>
+          <p id="success">Your message was sent successfully. Thank you!</p>
+          <form method="post" action="javascript:alert('demo only!');">
+            <div>
+              <label for="name">
+                <span class="required">Name: *</span>
+                <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+              </label>
+            </div>
+            <div>
+              <label for="email">
+                <span class="required">Email: *</span>
+                <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+              </label>
+            </div>
+            <div>
+              <label for="subject">
+                <span>Subject: </span>
+                <select id="subject" name="subject" tabindex="4">
+                  <option value="general">- General - </option>
+                </select>
+              </label>
+            </div>
+            <div>
+              <label for="message">
+                <span class="required">Message: *</span>
+                <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
+              </label>
+            </div>
+            <div>
+              <button name="submit" type="submit" id="submit">SEND</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="Data/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e6459972.js"></script>
+    <script id="rendered-js">
+      // Navigation
+      // Responsive Toggle Navigation =============================================
+      let menuIcon = document.querySelector('.menuIcon');
+      let nav = document.querySelector('.overlay-menu');
+      menuIcon.addEventListener('click', () => {
+        if (nav.style.transform != 'translateX(0%)') {
+          nav.style.transform = 'translateX(0%)';
+          nav.style.transition = 'transform 0.2s ease-out';
+        } else {
+          nav.style.transform = 'translateX(-100%)';
+          nav.style.transition = 'transform 0.2s ease-out';
+        }
+      });
+      // Toggle Menu Icon ========================================
+      let toggleIcon = document.querySelector('.menuIcon');
+      toggleIcon.addEventListener('click', () => {
+        if (toggleIcon.className != 'menuIcon toggle') {
+          toggleIcon.className += ' toggle';
+        } else {
+          toggleIcon.className = 'menuIcon';
+        }
+      });
+      window.onscroll = () => {
+        const nav = document.querySelector("#navbar");
+        if (this.scrollY <= 10) nav.className = "";
+        else nav.className = "scroll";
+      };
+    </script>
+  </body>
+</html>
